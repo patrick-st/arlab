@@ -7,11 +7,7 @@ package de.arlab.formulas
 case class Not(a: Formula) extends Formula {
 
   override def toString = {
-    if (a.isInstanceOf[And] || a.isInstanceOf[Or]){
-      "~(" + a + ")"
-    } else {
       "~" + a
-    }
   }
 
 }

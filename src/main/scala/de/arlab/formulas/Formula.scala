@@ -5,8 +5,20 @@ package de.arlab.formulas
  */
 trait Formula {
 
+  /**
+   * Methoden zur vereinfachten Darstellung
+   * @param that
+   * @return
+   */
   def &&(that: Formula) = And(this, that)
   def ||(that: Formula) = Or(this, that)
   def unary_- = Not(this)
+
+  /**
+   * Methode die eine Konversion als Parameter akzeptiert und diese auf sich selbst anwendet
+   * @param f Funktion
+   * @return
+   */
+  def transform(f: Formula => Formula) = f(this)
 
 }
