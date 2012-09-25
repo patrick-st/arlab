@@ -5,5 +5,6 @@ package de.arlab.formulas
  * @param value Variablenbezeichnung
  */
 case class Variable(value: String) extends Term {
+  override def toString = value
 
 }
