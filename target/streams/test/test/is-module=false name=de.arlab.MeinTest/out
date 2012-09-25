@@ -1,3 +1,8 @@
 [0m[[0minfo[0m] [0m[32mMeinTest:[0m[0m
 [0m[[0minfo[0m] [0m[32m- test some basic things[0m[0m
 [0m[[0minfo[0m] [0m[32m- aufgabe 1[0m[0m
+[0m[[0minfo[0m] [0m[31m- aufgabe 2.1 *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  "...x,z)) & ~Q(y)) | P(x[)y)]f(x,z)))" was not equal to "...x,z)) & ~Q(y)) | P(x[,y,]f(x,z)))" (MainTest.scala:52)[0m[0m
+[0m[[0minfo[0m] [0m[31m- aufgabe 2.2 *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  "?[x3]: (~P(x3[)]x1) | (![x1]: ~Q(x1)..." was not equal to "?[x3]: (~P(x3[,]x1) | (![x1]: ~Q(x1)..." (MainTest.scala:74)[0m[0m
+[0m[[0minfo[0m] [0m[32m- aufgabe 2.3[0m[0m
