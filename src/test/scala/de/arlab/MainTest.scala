@@ -29,10 +29,7 @@ class MeinTest extends FunSuite with ShouldMatchers {
     True && False should be (new And(True, False))
     False || True should be (new Or(False, True))
     -R should be (new Not(R))
-
     R && -Q || P should be (new Or(new And(R, new Not(Q)),P))
-
-
-
+    R && (-Q || P) should be (new And(R,new Or(new Not(Q),P)))
   }
 }
