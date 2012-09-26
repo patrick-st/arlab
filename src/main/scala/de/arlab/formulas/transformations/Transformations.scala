@@ -35,6 +35,7 @@ object Transformations {
     nnfFm match{
       case Or(a,And(b,c)) => And(cnf(Or (a,b)),cnf(Or(a,c)))
       case Or(And(b,c),a) => And(cnf(Or(b,a)),cnf(Or(c,a)))
+      case And(a,b) => And(cnf(a),cnf(b))
       case other => other
     }
   }
@@ -58,7 +59,7 @@ object Transformations {
      case And(a,b) if b == True => presimplify(a)
      case And(a,b) if b == True && a == True => True
      case And(a,b) if a == False || b == False => False
-     case And(a,b)  =>(And(presimplify(a), presimplify(b)))
+     case And(a,b)  => And(presimplify(a), presimplify(b))
 
      case Or(a,b) if a == b => presimplify(a)
      case Or(a,b) if b == Not(a) || a == Not(b) => True
@@ -66,7 +67,7 @@ object Transformations {
      case Or(a,b) if a == False => presimplify(b)
      case Or(a,b) if b == False => presimplify(a)
      case Or(a,b)  if a == False && b == False => False
-     case Or(a,b)  => (Or(presimplify(a), presimplify(b)))
+     case Or(a,b)  => Or(presimplify(a), presimplify(b))
 
      case Not(Not(a)) => presimplify(a)
 

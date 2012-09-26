@@ -7,7 +7,7 @@ case class Function(name: String, terms: Term*) extends Term {
     if (terms.isEmpty){
       name
     } else {
-    name + "(" + terms.mkString(",") + ")"
+      name + terms.mkString("(", "," , ")")
     }
   }
 

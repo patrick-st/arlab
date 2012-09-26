@@ -11,7 +11,7 @@ case class Predicate(name: String, terms: Term*) extends Formula {
     if (terms.isEmpty){
       name
     } else{
-    name + terms.mkString("(",")", ")")
+    name + terms.mkString("(", "," , ")")
     }
   }
 }
