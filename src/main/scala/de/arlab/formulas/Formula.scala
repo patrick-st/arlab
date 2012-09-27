@@ -21,4 +21,13 @@ trait Formula {
    */
   def transform(f: Formula => Formula) = f(this)
 
+
+  def free: Set[Variable]
+  def bound: Set[Variable]
+
+
+  def subst(sfn: Map[Variable,Term]): Formula
+
+
+
 }

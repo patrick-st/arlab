@@ -52,12 +52,10 @@ object Transformations {
      case And(a,Or(b,c)) if b == a || c == a  => presimplify(a)
      case And(Or(b,c),a) if a == b || a == c => presimplify(a)
 
-
      case And(a,b) if a == b => presimplify(a)
      case And(a,b) if b == Not(a) || a == Not(b) => False
      case And(a,b) if a == True => presimplify(b)
      case And(a,b) if b == True => presimplify(a)
-     case And(a,b) if b == True && a == True => True
      case And(a,b) if a == False || b == False => False
      case And(a,b)  => And(presimplify(a), presimplify(b))
 

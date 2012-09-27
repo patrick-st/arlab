@@ -10,4 +10,19 @@ case class Not(a: Formula) extends Formula {
       "~" + a
   }
 
+  /**
+   * Bestimmung der freien Variablen der Formeln a
+   * @return
+   */
+  def free: Set[Variable] = a.free
+
+  /**
+   * Bestimmung der gebundenen Variablen der Formeln a
+   * @return
+   */
+  def bound: Set[Variable] = a.bound
+
+  def subst(sfn: Map[Variable,Term]): Formula = new Not(a.subst(sfn))
+
+
 }

@@ -86,7 +86,10 @@ class TestBlatt2 extends FunSuite with ShouldMatchers {
     Transformations.simplify(a && (b || True)) should be (a)
     Transformations.simplify(a && (b || a)) should be (a)
     Transformations.simplify(a && (b || c)) should be (a && (b || c))
-  }
+    Transformations.simplify((-(-a) || -(-a)) && (a || -a) && (True || a) && (False || False) && (a || b)) should be
+    (a)
+    Transformations.simplify((-(-a) || -(-a)) && (a || -a) &&
+      (True || a) && (False || False) && (a || b) && (a || False)) should be (False)}
 
 
 }

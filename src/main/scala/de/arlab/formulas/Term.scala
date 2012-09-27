@@ -5,4 +5,11 @@ package de.arlab.formulas
  */
 trait Term {
 
+  def free: Set[Variable]
+
+  def bound: Set[Variable]
+
+  def subst(sfn: Map[Variable,Term]): Term
+
+
 }
