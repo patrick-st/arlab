@@ -25,5 +25,16 @@ package de.arlab.formulas
    */
   def bound: Set[Variable] = a.bound union b.bound
 
+  /**
+   * substituiert die Terme der Teilformeln a und b, die über die Map sfn definiert sind
+   * @param sfn
+   * @return
+   */
   def subst(sfn: Map[Variable,Term]): Formula = new Or(a.subst(sfn), b.subst(sfn))
+
+  /**
+   * gibt die Funktionen (mit Stelligkeit) der Teilformeln a und b zurück
+   * @return
+   */
+  def functions: Set[(String, Int)]  = a.functions union b.functions
 }

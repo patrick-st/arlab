@@ -99,5 +99,66 @@ object Transformations {
     return simpfm
   }
 
+  /**
+   *   skolemisiert die Formel fm
+   * @param fm
+   * @return
+   */
+  def skolemize(fm: Formula): Formula = {
+    var nnfFm = Transformations.nnf(fm)
+    nnfFm match {
+      case ForAll(x,a) => ForAll(x,skolemize(a))
+      case Exists(x,a) => {
+        val free = nnfFm.free
+        val skolem = Function("sk", free.toSeq:_*).variant(a.functions)
+        skolemize(a.subst(Map(x -> skolem)))
+      }
+      case And(a,b) => And(skolemize(a),skolemize(b))
+      case Or(a,b) => Or(skolemize(a), skolemize(b))
+
+      case other => other
+    }
+  }
+
+  /**
+   * erzeugt die Pränexnormalform der Formel fm
+   * @param fm
+   * @return
+   */
+    def pnf(fm: Formula): Formula = {
+     val allVariables = fm.free union fm.bound
+      fm match{
+        case And(a,ForAll(x,y)) if(a.free.contains(x)) => {
+          val variant = x.variant(allVariables)
+          val map = Map(x -> variant)
+          pnf(ForAll(variant,And(a,y.subst(map))))
+        }
+        case And(a,ForAll(x,y)) if(!a.free.contains(x)) => pnf(ForAll(x,And(a,y)))
+        case Or(a,ForAll(x,y)) if(a.free.contains(x)) => {
+          val variant = x.variant(allVariables)
+          val map = Map(x -> variant)
+          pnf(ForAll(variant,Or(a,y.subst(map))))
+        }
+        case Or(a,ForAll(x,y)) if(!a.free.contains(x)) => pnf(ForAll(x,Or(a,y)))
+        case ForAll(x,a) => ForAll(x,pnf(a))
+        case other => other
+
+      }
+
+    }
+
+  /**
+   * Rückgabe der Matrix einer quantorenfreien PNF
+   * @param fm
+   * @return
+   */
+  def matrix(fm: Formula): Formula = fm match{
+    case ForAll(x,a) => matrix(a)
+    case Exists(x,a) => matrix(a)
+    case other => other
+  }
+
+
+
 
 }

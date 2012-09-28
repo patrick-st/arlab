@@ -25,14 +25,17 @@ case class ForAll(variable: Variable, a: Formula ) extends Formula {
   def bound: Set[Variable] = a.bound + variable
 
 
-
+  /**
+   * Substitution aller Terme, die über die Map sfn definiert sind
+   * @param sfn
+   * @return
+   */
   def subst(sfn: Map[Variable,Term]): Formula = {
     var sfn_ = sfn
     var newVariable = variable
     //1. Fall: Man möchte eine gebundene Variable substituieren
-    if (sfn.contains(variable)){
-      sfn_ -= variable
-    }
+    sfn_ -= variable
+
     //2. Fall beim Substituieren fällt eine freie Variable unter eine Bindung
     val allVariables = sfn.values.foldLeft(Set[Variable]())(_ union _.free)
     if (allVariables.contains(variable)){
@@ -41,6 +44,11 @@ case class ForAll(variable: Variable, a: Formula ) extends Formula {
     }
 
     new ForAll(newVariable,a.subst(sfn_))
-
   }
+
+  /**
+   * Gibt alle Funktionen (mit Stelligkeit) der Formel a zurück
+   * @return
+   */
+  def functions: Set[(String, Int)]  = a.functions
 }

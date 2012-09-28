@@ -17,6 +17,8 @@ class MeinTest extends FunSuite with ShouldMatchers {
     list should have size (4)
     list.isEmpty should be (false)
     list(3) should be (4)
+
+    list union List(5) should be (List(1,2,3,4,5))
   }
 
 }

@@ -11,5 +11,7 @@ trait Term {
 
   def subst(sfn: Map[Variable,Term]): Term
 
+  def functions: Set[(String, Int)]
+
 
 }

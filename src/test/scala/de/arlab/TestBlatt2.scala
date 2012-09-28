@@ -80,6 +80,8 @@ class TestBlatt2 extends FunSuite with ShouldMatchers {
     val a = new Predicate("a")
     val b = new Predicate("b")
     val c = new Predicate("c")
+    val d = new Predicate("d")
+
 
     Transformations.simplify(True) should be (True)
     Transformations.simplify(a && b || True) should be (True)
@@ -89,7 +91,18 @@ class TestBlatt2 extends FunSuite with ShouldMatchers {
     Transformations.simplify((-(-a) || -(-a)) && (a || -a) && (True || a) && (False || False) && (a || b)) should be
     (a)
     Transformations.simplify((-(-a) || -(-a)) && (a || -a) &&
-      (True || a) && (False || False) && (a || b) && (a || False)) should be (False)}
+      (True || a) && (False || False) && (a || b) && (a || False)) should be (False)
+
+    Transformations.simplify(((a || b || c) && (a || b)) && ((a || b || c || d) && (-a))) should be
+    (((a || b || c) && (a || b)) && ((a || b || c || d) && (-a)))
+
+
+
+
+
+  }
+
+
 
 
 }

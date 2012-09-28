@@ -28,6 +28,10 @@ trait Formula {
 
   def subst(sfn: Map[Variable,Term]): Formula
 
+  def functions: Set[(String, Int)]
+
+
+
 
 
 }

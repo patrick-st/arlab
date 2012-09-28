@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa60f6a-680e-4e9c-b4ca-2bcaf07bd6ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/Main.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/Main.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/And.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/And.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala" />
@@ -18,7 +18,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" />
     </list>
     <ignored path="arlab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,55 +78,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ForAll.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ForAll.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="19" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestBlatt3.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="57" selection-start="1674" selection-end="1675" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Or.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Or.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="82" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Predicate.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="25" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Term.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Term.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="True.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="50" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+            <state line="29" column="5" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,25 +90,81 @@
       <file leaf-file-name="Variable.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="71" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+            <state line="45" column="35" selection-start="795" selection-end="1062" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Formula.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Formula.scala">
+      <file leaf-file-name="Transformations.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="81" selection-start="241" selection-end="241" vertical-scroll-proportion="0.21495327">
+            <state line="157" column="39" selection-start="4527" selection-end="4527" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exists.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala">
+      <file leaf-file-name="TestBlatt3.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="29" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
+            <state line="116" column="44" selection-start="3681" selection-end="3681" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBlatt2.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="99" column="26" selection-start="3535" selection-end="3535" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBlatt4.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="13" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.8093458">
+              <folding>
+                <element signature="e#18#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClauseSet.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="49" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTest.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="3" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Predicate.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="38" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Not.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Not.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="63" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,22 +190,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Term.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/Main.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/And.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Or.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Not.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Function.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ForAll.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Not.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/And.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Or.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Formula.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Function.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala" />
       </list>
     </option>
   </component>
@@ -228,6 +241,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -246,14 +269,182 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainTest.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formulas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arlab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formulas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transformations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -265,6 +456,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="153" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="153" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="153" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
@@ -287,7 +479,26 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="ScalaTest.TestBlatt4">
+    <configuration default="false" name="TestBlatt4" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="default-0b304a" />
+      <setting name="path" value="de.arlab.TestBlatt4" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -423,7 +634,9 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.TestBlatt4" />
+    </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -487,12 +700,16 @@
       <created>1348647563440</created>
       <updated>1348647563440</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="bla">
+      <created>1348733339001</created>
+      <updated>1348733339001</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -506,7 +723,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24905087" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24905087" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -576,87 +793,87 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="18" selection-end="340" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/And.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" />
+        <state line="34" column="64" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Function.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Not.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="75" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" />
+        <state line="26" column="1" selection-start="498" selection-end="571" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ForAll.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="19" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="57" selection-start="1674" selection-end="1675" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Or.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="82" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="25" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Term.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="50" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="71" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="29" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0" />
+        <state line="31" column="51" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Formula.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="81" selection-start="241" selection-end="241" vertical-scroll-proportion="0.21495327">
-          <folding />
+        <state line="30" column="35" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Or.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="5" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Function.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="28" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="5" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="35" selection-start="795" selection-end="1062" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="39" selection-start="4527" selection-end="4527" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="44" selection-start="3681" selection-end="3681" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="26" selection-start="3535" selection-end="3535" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="49" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="3" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Not.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="63" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="13" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.8093458">
+          <folding>
+            <element signature="e#18#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -711,12 +928,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>default-0b304a-build</last-edited>
+          <last-edited>default-0b304a</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

@@ -22,7 +22,18 @@ case class Not(a: Formula) extends Formula {
    */
   def bound: Set[Variable] = a.bound
 
+  /**
+   * substituiert die Terme der Formel a, die über die Map sfn definiert sind
+   * @param sfn
+   * @return
+   */
   def subst(sfn: Map[Variable,Term]): Formula = new Not(a.subst(sfn))
+
+  /**
+   * Gibt alle Funktionen (mit Stelligkeit) der Formel a zurück
+   * @return
+   */
+  def functions: Set[(String, Int)]  = a.functions
 
 
 }

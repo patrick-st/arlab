@@ -12,24 +12,45 @@ case class Variable(value: String) extends Term {
    * @return
    */
   def free: Set[Variable] =  Set[Variable](this)
+
+  /**
+   * Gibt eine leere Menge zurück
+   * @return
+   */
   def bound: Set[Variable] = Set[Variable]()
 
+  /**
+   *  substituiert die Variable zu einem neuen Term, wenn sie in der Map enthalten ist
+   * @param sfn
+   * @return
+   */
   def subst(sfn: Map[Variable,Term]): Term = sfn.getOrElse(this, this)
 
-    def variant(vars: Set[Variable]): Variable = {
-      var exit = false
-      var counter = 1
-      var variable = this
-      while (!exit){
-        variable = new Variable(this.value+counter)
-        if (vars.contains(variable)){
-          counter = counter+1
-        }  else {
-          exit = true
-        }
-      }
-      return variable
-    }
+  /**
+   * variiert eine Variable zu einer neuen, die noch nicht im Set enthalten ist
+   * @param vars
+   * @return
+   */
+  def variant(vars: Set[Variable]): Variable = {
+     var exit = false
+     var counter = 1
+     var variable = this
+     while (!exit){
+       variable = new Variable(this.value+counter)
+       if (vars.contains(variable)){
+         counter = counter+1
+       }  else {
+         exit = true
+       }
+     }
+     variable
+   }
+
+  /**
+   * gibt die Funktionen mit Stelligkeit zurück
+   * @return
+   */
+  def functions: Set[(String, Int)] = Set[(String, Int)]()
 
 
 
