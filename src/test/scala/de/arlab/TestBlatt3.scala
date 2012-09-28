@@ -112,6 +112,11 @@ class TestBlatt3 extends FunSuite with ShouldMatchers {
     val formelD = Px && ForAll(x,Px)
     Transformations.pnf(formelD) should be (ForAll(x1,Px && Px1))
 
+    val formelG = ForAll(x,Px || ForAll(y,Ry))
+    Transformations.pnf(formelG) should be (ForAll(x,ForAll(y,Px || Ry)))
+
+    val formelH = Px || ForAll(x,Px)
+    Transformations.pnf(formelH) should be (ForAll(x1,Px || Px1))
 
 
     //test skolem
@@ -128,6 +133,7 @@ class TestBlatt3 extends FunSuite with ShouldMatchers {
 
     //test matrix
     Transformations.matrix(ForAll(x,ForAll(y,Px && Ry))) should be (Px && Ry)
+    Transformations.matrix(Exists(x,ForAll(y,Px && Ry))) should be (Px && Ry)
 
 
 

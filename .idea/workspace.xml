@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa60f6a-680e-4e9c-b4ca-2bcaf07bd6ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Unification.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4_2.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4_3.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/And.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/And.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ForAll.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ForAll.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Formula.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Formula.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Function.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Function.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Not.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Not.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Or.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Or.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Term.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Term.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala" afterPath="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala" afterPath="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala" />
     </list>
     <ignored path="arlab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,28 +68,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="True.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Variable.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="35" selection-start="795" selection-end="1062" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transformations.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Transformations.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="39" selection-start="4527" selection-end="4527" vertical-scroll-proportion="0.0">
+            <state line="164" column="20" selection-start="4617" selection-end="4617" vertical-scroll-proportion="1.317757">
               <folding />
             </state>
           </provider>
@@ -108,7 +80,7 @@
       <file leaf-file-name="TestBlatt3.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="44" selection-start="3681" selection-end="3681" vertical-scroll-proportion="0.0">
+            <state line="16" column="53" selection-start="359" selection-end="395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,16 +89,36 @@
       <file leaf-file-name="TestBlatt2.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="26" selection-start="3535" selection-end="3535" vertical-scroll-proportion="0.0">
+            <state line="105" column="0" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBlatt4.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestBlatt1.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="6" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBlatt4.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="13" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.8093458">
+            <state line="55" column="19" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#18#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestBlatt4_3.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4_3.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="35" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#18#65#0" expanded="true" />
               </folding>
@@ -134,28 +126,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TestBlatt4_2.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4_2.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="73" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#18#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unification.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Unification.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="41" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ClauseSet.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="49" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainTest.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="3" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Predicate.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="38" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+            <state line="16" column="56" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,9 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ForAll.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/True.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Not.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/And.scala" />
@@ -200,12 +191,15 @@
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Predicate.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Variable.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Function.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4_3.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4_2.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Unification.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala" />
       </list>
     </option>
   </component>
@@ -704,7 +698,11 @@
       <created>1348733339001</created>
       <updated>1348733339001</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="bla">
+      <created>1348819506720</created>
+      <updated>1348819506720</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -719,6 +717,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -728,7 +727,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -793,26 +791,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Exists.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="64" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/False.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="498" selection-end="571" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ForAll.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="51" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Formula.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Or.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="5" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" />
@@ -833,26 +811,6 @@
         <state line="45" column="35" selection-start="795" selection-end="1062" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="39" selection-start="4527" selection-end="4527" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="44" selection-start="3681" selection-end="3681" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="26" selection-start="3535" selection-end="3535" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="49" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/MainTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="3" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" />
@@ -868,12 +826,72 @@
         <state line="32" column="63" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="0" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt3.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="53" selection-start="359" selection-end="395" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="13" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.8093458">
+        <state line="55" column="19" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#18#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4_3.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#18#65#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/de/arlab/TestBlatt4_2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="73" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#18#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/ClauseSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="56" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/Unification.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="41" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/de/arlab/formulas/transformations/Transformations.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="20" selection-start="4617" selection-end="4617" vertical-scroll-proportion="1.317757">
+          <folding />
         </state>
       </provider>
     </entry>

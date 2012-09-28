@@ -1,7 +1,8 @@
 package de.arlab
 
+import formulas.Predicate
 import formulas.transformations.Transformations
-import formulas.{ClauseSet, Formula, Not, Predicate}
+import formulas._
 import org.scalatest.FunSuite
 import org.scalatest.matchers.ShouldMatchers
 
@@ -13,10 +14,11 @@ class TestBlatt4 extends FunSuite with ShouldMatchers {
     val b =  Predicate("b")
     val c =  Predicate("c")
     val d =  Predicate("d")
+    val x = Variable("x")
+    val bx =  Predicate("b",x)
 
-    //println((a || b )
-    ClauseSet.create_((a || b )|| (c || d) ) should be (List[Formula](a,b,c,d))
-    ClauseSet.create_(a || b || c || d) should be (List[Formula](a,b,c,d))
+    ClauseSet.clauseToList((a || b )|| (c || d) ) should be (List[Formula](a,b,c,d))
+    ClauseSet.clauseToList(a || b || c || d) should be (List[Formula](a,b,c,d))
 
 
 
@@ -39,13 +41,16 @@ class TestBlatt4 extends FunSuite with ShouldMatchers {
 
     Transformations.cnf(formelA) should be (formelA)
 
-    Transformations.simplify(formelA) should be
-    (formelA)
+    Transformations.simplify(formelA) should be (formelA)
 
-    ClauseSet.create(formelA) should be
-    (resA)
+    ClauseSet.create(formelA) should be (resA)
 
    formelA should be  (((a || b || c) && (a || b)) && ((a || b || c || d) && (-a)))
+
+    val formelB =  ((a || b || c) && Exists(x,(a || bx))) && ForAll(x,(a || b || c || d) && (-a))
+    val resB =   List[List[Formula]](klausel1,List[Formula](a, Predicate("b",Function("sk1"))), klausel3, klausel4)
+    ClauseSet.create(formelB) should be (resB)
+
 
 
   }

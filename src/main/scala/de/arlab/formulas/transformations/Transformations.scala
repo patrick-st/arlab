@@ -47,10 +47,10 @@ object Transformations {
    */
    def presimplify(fm : Formula) : Formula = fm match {
      //Absorptionsregeln
-     case Or(a,And(b,c)) if b == a || a == c => presimplify(a)
+    /* case Or(a,And(b,c)) if b == a || a == c => presimplify(a)
      case Or(And(b,c),a) if a == b || a == c => presimplify(a)
      case And(a,Or(b,c)) if b == a || c == a  => presimplify(a)
-     case And(Or(b,c),a) if a == b || a == c => presimplify(a)
+     case And(Or(b,c),a) if a == b || a == c => presimplify(a)  */
 
      case And(a,b) if a == b => presimplify(a)
      case And(a,b) if b == Not(a) || a == Not(b) => False
@@ -134,6 +134,7 @@ object Transformations {
           pnf(ForAll(variant,And(a,y.subst(map))))
         }
         case And(a,ForAll(x,y)) if(!a.free.contains(x)) => pnf(ForAll(x,And(a,y)))
+
         case Or(a,ForAll(x,y)) if(a.free.contains(x)) => {
           val variant = x.variant(allVariables)
           val map = Map(x -> variant)
@@ -158,6 +159,19 @@ object Transformations {
     case other => other
   }
 
+  /**
+   * allquantifiziert alle freien Variablen
+   * @param fm
+   * @return
+   */
+  def generalize(fm: Formula): Formula = {
+    val free = fm.free
+    if(!free.isEmpty){
+      val first = free.head
+      val fm_ = ForAll(first,fm)
+      generalize(fm_)
+    } else fm
+  }
 
 
 

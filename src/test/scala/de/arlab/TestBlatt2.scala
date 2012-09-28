@@ -66,8 +66,7 @@ class TestBlatt2 extends FunSuite with ShouldMatchers {
 
 
     val formelA = Transformations.cnf(-((A || B || -C) && (-A || D || -G)))
-    formelA should be   (((((-A || A) && (-B || A)) && (C || A)) && (((-A || -D) && (-B || -D)) &&
-      (C || -D))) && (((-A || G) && (-B || G)) && (C || G)))
+    formelA should be   (((((-A || A) && (-B || A)) && (C || A)) && (((-A || -D) && (-B || -D)) && (C || -D))) && (((-A || G) && (-B || G)) && (C || G)))
 
     val formelB = Transformations.cnf(new Not(new Not(new Not(A))))
     formelB should be (new Not(A))
@@ -86,15 +85,23 @@ class TestBlatt2 extends FunSuite with ShouldMatchers {
     Transformations.simplify(True) should be (True)
     Transformations.simplify(a && b || True) should be (True)
     Transformations.simplify(a && (b || True)) should be (a)
-    Transformations.simplify(a && (b || a)) should be (a)
+   // Transformations.simplify(a && (b || a)) should be (a)
     Transformations.simplify(a && (b || c)) should be (a && (b || c))
-    Transformations.simplify((-(-a) || -(-a)) && (a || -a) && (True || a) && (False || False) && (a || b)) should be
-    (a)
-    Transformations.simplify((-(-a) || -(-a)) && (a || -a) &&
-      (True || a) && (False || False) && (a || b) && (a || False)) should be (False)
+    Transformations.simplify((-(-a) || -(-a)) && (a || -a) && (True || a) && (False || False) && (a || b)) should be (False)
+    Transformations.simplify((-(-a) || -(-a)) && (a || -a) &&(True || a) && (False || False) && (a || b) && (a || False)) should be (False)
 
-    Transformations.simplify(((a || b || c) && (a || b)) && ((a || b || c || d) && (-a))) should be
-    (((a || b || c) && (a || b)) && ((a || b || c || d) && (-a)))
+    Transformations.simplify(((a || b || c) && (a || b)) && ((a || b || c || d) && (-a))) should be (((a || b || c) && (a || b)) && ((a || b || c || d) && (-a)))
+
+
+    val teilA = (a || b || c) && (a || b)
+    val teilB = (a || b || c || d) && -a
+    val formelA = teilA && teilB
+
+    Transformations.simplify(formelA) should be (((a || b || c) && (a || b)) && ((a || b || c || d) && (-a)))
+
+
+
+
 
 
 
