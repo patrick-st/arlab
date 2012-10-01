@@ -20,6 +20,9 @@ class TestBlatt4_3 extends FunSuite with ShouldMatchers {
    val formelA = P && Qz && Exists(y,Qy)
    Transformations.generalize(formelA) should be (ForAll(z,ForAll(x,formelA)))
 
+   val formelB = Exists(y,Qy && Qz && P)
+   Transformations.generalize(formelB) should be (ForAll(x,ForAll(z,(Exists(y,Qy && Qz && P)))))
+
 }
 
 }

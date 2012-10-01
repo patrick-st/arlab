@@ -7,7 +7,7 @@ import org.scalatest.FunSuite
 import org.scalatest.matchers.ShouldMatchers
 
 
-class TestBlatt4 extends FunSuite with ShouldMatchers {
+class TestBlatt4_1 extends FunSuite with ShouldMatchers {
 
   test("aufgabe 4.1"){
     val a =  Predicate("a")
@@ -33,19 +33,7 @@ class TestBlatt4 extends FunSuite with ShouldMatchers {
     val klausel4 = List[Formula](-a)
     val resA = List[List[Formula]](klausel1,klausel2,klausel3,klausel4)
 
-    Transformations.skolemize(formelA) should be (formelA)
-
-    Transformations.pnf(formelA) should be (formelA)
-
-    Transformations.matrix(formelA) should be (formelA)
-
-    Transformations.cnf(formelA) should be (formelA)
-
-    Transformations.simplify(formelA) should be (formelA)
-
     ClauseSet.create(formelA) should be (resA)
-
-   formelA should be  (((a || b || c) && (a || b)) && ((a || b || c || d) && (-a)))
 
     val formelB =  ((a || b || c) && Exists(x,(a || bx))) && ForAll(x,(a || b || c || d) && (-a))
     val resB =   List[List[Formula]](klausel1,List[Formula](a, Predicate("b",Function("sk1"))), klausel3, klausel4)
